@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form</title>
+</head>
+<body>
+<form method="POST", action="/predict">
+    <textarea name="text", id="data", style="height:200px;width:500px"></textarea>
+    <br></br>
+    <select name="dropdown">
+        <option value="SVM" selected>SVM</option>
+        <option value="RandomForsst">RandomForsst</option>
+        <option value="DNN">DNN</option>
+        <option value="LSTM">LSTM</option>
+        <option value="BRNN">BRNN</option>
+        <option value="Linear">Linear</option>
+    </select>
+
+    <p>
+		<input type="submit" value="Predict">
+	</p>
+</form>
+<br>
+
+</br>
+<h1>{{ result }}</h1>
+<!--<a href="/">-->
+<!--    <button>Refresh</button>-->
+<!--</a>-->
+<!--<br></b>-->
+<!--<br></b>-->
+<!--<a href="/predict/SVM", type="post"> SVM</a>-->
+<!--<br></b>-->
+<!--<a href="/predict/RandomForsst"> RandomForest</a>-->
+<!--<br></b>-->
+<!--<a href="/predict/DNN"> <DNN></DNN></a>-->
+<!--<br></b>-->
+<!--<a href="/predict/LSTM"> LSTM</a>-->
+<!--<br></b>-->
+<!--<a href="/predict/RNN"> BRNN</a>-->
+</body>
+</html>
